@@ -1,0 +1,30 @@
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native build output (managed workflow; regenerate with `npx expo prebuild`)
+/ios
+/android
+
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+.env
+.env.local
+.env.*.local
+secrets/
+
+npm-debug.*
+yarn-error.*
+.DS_Store
+
+# Ingest working directory (large third-party corpora)
+scripts/ingest/.cache/
+supabase/.branches/
+supabase/.temp/
