@@ -369,12 +369,10 @@ const HEBREW_VOWELS: Record<string, string> = {
 };
 
 const DAGESH = 'ּ';
-const SHIN_DOT = 'ׁ';
 const SIN_DOT = 'ׂ';
 
 const SHEVA = 'ְ';
 const HOLAM = 'ֹ';
-const HIRIQ = 'ִ';
 
 interface HebrewCluster {
   letter: string;
