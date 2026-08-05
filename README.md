@@ -330,6 +330,13 @@ supabase/tests/validate.sh --with-tests
 
 ---
 
+## Shipping it
+
+`LAUNCH.md` is the route from here to the stores. Read Stage 0 first — there are
+four App Review blockers (content reporting, user blocking, in-app account
+deletion, published contact info) that are not in this codebase yet and that the
+app cannot be submitted without.
+
 ## Notes and known limits
 
 - **`expo-av` is deprecated.** It is used for voice notes because SDK 54 is the
@@ -349,3 +356,7 @@ supabase/tests/validate.sh --with-tests
   would be a different feature wearing the same label.
 - The `eas.json` submit block and `app.json` EAS project id are placeholders.
   Run `eas init` and fill in your Apple/Play identifiers before `eas submit`.
+- **No moderation tooling.** Chat, healing circles and shared room notes are all
+  user-generated content, and there is no way to report a post, block a person,
+  or delete your account. Apple Guideline 1.2 and 5.1.1(v) require all three.
+  See `LAUNCH.md` Stage 0.
